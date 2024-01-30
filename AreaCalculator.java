@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class AreaCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Choose an option:");
+        System.out.println("1. Circle");
+        System.out.println("2. Rectangle");
+        System.out.println("3. Square");
+
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.print("Enter the radius of the circle: ");
+                double radius = scanner.nextDouble();
+                double circleArea = Math.PI * Math.pow(radius, 2);
+                System.out.println("Area of the circle: " + circleArea);
+                break;
+
+            case 2:
+                System.out.print("Enter the length of the rectangle: ");
+                double length = scanner.nextDouble();
+                System.out.print("Enter the width of the rectangle: ");
+                double width = scanner.nextDouble();
+                double rectangleArea = length * width;
+                System.out.println("Area of the rectangle: " + rectangleArea);
+                break;
+
+            case 3:
+                System.out.print("Enter the side length of the square: ");
+                double side = scanner.nextDouble();
+                double squareArea = Math.pow(side, 2);
+                System.out.println("Area of the square: " + squareArea);
+                break;
+
+            default:
+                System.out.println("Invalid option. Please choose 1, 2, or 3.");
+        }
+
+        scanner.close();
+    }
+}
