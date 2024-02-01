@@ -70,7 +70,7 @@ public class PizzaOrder {
         System.out.println("price " + price);
         System.out.println("Total Price: $" + totalPrice);
         System.out.println("Discount $" +discount);
-        System.out.println("netamout"+(discount- totalPrice);
+        System.out.println("netamout"+(discount- totalPrice));
         System.out.println("tax"+tax);
 
 
