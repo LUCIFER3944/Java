@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
-public class PizzaOrder {
+public class Reservation2 {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome to the Reservation Application!");
 
         
-        System.out.println("Enter your customer name:");
+        System.out.println("Enter your name:");
         String Cname = scanner.nextLine();
         
         System.out.println("Enter your customer Address:");
@@ -16,8 +17,8 @@ public class PizzaOrder {
         long mobileNumber = scanner.nextLong();
 
 
-        System.out.println("Choose a pizza: \n 1. Margherita,\n 2. Pepperoni,\n 3. Veggie,\n 4. BBQ Chicken, \n 5. Hawaiian");
-        int pizzaChoice = scanner.nextInt();
+        System.out.println("Choose a Destination \n 1. Jammu,\n 2. Delhi,\n 3. pathankot,\n 4.Prayagraj, \n 5. Vanarasi");
+        int DestinationChoice = scanner.nextInt();
 
         System.out.println("Price");
         int price = scanner.nextInt();
@@ -26,36 +27,31 @@ public class PizzaOrder {
         System.out.println("Enter quantity:");
         int quantity = scanner.nextInt();
 
-        System.out.println("Enter discount:");
-        int discount = scanner.nextInt();
-
-        System.out.println("Tax");
-        double tax=scanner.nextDouble();
 
      
       
 
         double totalPrice = 0;
 
-        switch (pizzaChoice) {
+        switch (DestinationChoice) {
             case 1:
-                System.out.println("You chose Margherita.");
+                System.out.println("You chose jammu.");
                 totalPrice = quantity * price;
                 break;
             case 2:
-                System.out.println("You chose Pepperoni.");
+                System.out.println("You chose Delhi.");
                 totalPrice = quantity * price;
                 break;
             case 3:
-                System.out.println("You chose Veggie.");
+                System.out.println("You chose pathankot.");
                 totalPrice = quantity * price;
                 break;
             case 4:
-                System.out.println("You chose BBQ Chicken.");
+                System.out.println("You chose prayagraj.");
                 totalPrice = quantity * price;
                 break;
             case 5:
-                System.out.println("You chose Hawaiian.");
+                System.out.println("You chose Vanarasi.");
                 totalPrice = quantity * price;
                 break;
             default:
@@ -69,18 +65,10 @@ public class PizzaOrder {
         System.out.println("Quantity: " + quantity);
         System.out.println("price " + price);
         System.out.println("Total Price: $" + totalPrice);
-        System.out.println("Discount $" +discount);
-        System.out.println("netamout"+(discount- totalPrice));
-        System.out.println("tax"+tax);
+     
 
 
        
-        System.out.println("netamount");
-       double netamount = scanner.nextDouble();
-
-    
-
-        System.out.println(netamount*tax/100);
-
+        
     }
 }
