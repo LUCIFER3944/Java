@@ -20,30 +20,33 @@ public static void main(String args[]){
         int price = sc.nextInt();
  
 
-        System.out.println("Enter quantity:");
+        System.out.println("Enter quantity of people:");
         int quantity = sc.nextInt();
+
+        System.out.println("Enter number of days:");
+        int numberofdays= sc.nextInt();
         double totalPrice = 0;
        
         switch (room) {
             case 1:
                 System.out.println("You chose delux.");
-                totalPrice = quantity * price;
+                totalPrice = numberofdays*quantity * price;
                 break;
             case 2:
                 System.out.println("You chose normal.");
-                totalPrice = quantity * price;
+                totalPrice = numberofdays*quantity * price;
                 break;
             case 3:
                 System.out.println("You chose classic.");
-                totalPrice = quantity * price;
+                totalPrice = numberofdays*quantity * price;
                 break;
             case 4:
                 System.out.println("You chose smallroom.");
-                totalPrice = quantity * price;
+                totalPrice = numberofdays*quantity * price;
                 break;
             case 5:
                 System.out.println("You chose bigroom");
-                totalPrice = quantity * price;
+                totalPrice = numberofdays*quantity * price;
                 break;
             default:
                 System.out.println("Invalid choice. Please select a valid pizza.");
