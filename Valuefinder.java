@@ -10,6 +10,7 @@ public class Valuefinder {
         System.out.print("Enter amount for electronics: ");
         double electronicsAmount = scanner.nextDouble();
 
+        
         System.out.print("Enter amount for food: ");
         double foodAmount = scanner.nextDouble();
 
